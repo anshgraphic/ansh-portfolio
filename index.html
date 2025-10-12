@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website Project</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6eb04d1a12.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav> 
+                <a href="#header" class="logo-text">Ansh.</a>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>B.tech Undergrad. Eager to learn and contribute</p>
+                <h1>Hi, I am Ansh Sharma</h1>
+            </div>
+        </div>
+    </div>
+    <!------------ about ------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/photo01.jpg" alt="Ansh Sharma Professional Photo">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am Ansh Sharma, a final year B.tech CSE student from Graphic Era Hill University Dehradun.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>Software Engineer</li>
+                            <li>Machine Learning</li>
+                            <li>Artificial Intelligence</li>
+                            <li>Front End Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>Currently doing 6 weeks internship under AICTE in collaboration with Edunet Foundation in the domain of Front End Development.</li>
+                            <li>Completed 6 weeks internship under AICTE in collaboration with Edunet Foundation in the domain of Artificial Intelligence and Machine Learning</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>Final Year B.tech CSE Student at Graphic Era Hill University Dehradun</li>
+                            <li>XII 87.2% from Touch Wood School Dehradun</li>
+                            <li>X 92.6% from Touch Wood School Dehradun</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------ services ------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Expertise</h1>
+            <div class="services-list">
+                  <div>
+                    <i class="fa-solid fa-brain"></i>
+                    <!-- <i class="fa-solid fa-code"></i> -->
+                    <h2>Machine Learning & AI</h2>
+                    <p>Building predictive models and intelligent systems using Python, scikit-learn, and expertise in NLP.</p>
+                    <a href="#">Learn more...</a>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Front-End Development</h2>
+                    <p>Creating responsive and interactive user interfaces using modern HTML, CSS, and JavaScript, as demonstrated by the Amazon Clone project and this Portfolio Project.</p>
+                    <a href="#">Learn more...</a>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-code-branch"></i>
+                    <h2>Core Programming</h2>
+                    <p>Strong command over C, C++, Python, and Java, focusing on Data Structures and Algorithms.</p>
+                    <a href="#">Learn more...</a>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <!------------ portfolio ------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-01.jpg" alt="SMS Spam Detection Project">
+                    <div class="layer">
+                        <h3>SMS Spam Detection (ML)</h3>
+                        <p>Developed an ML system to classify SMS as spam or ham. Used preprocessing, feature extraction, and imbalance handling techniques.</p>
+                        <a href="https://github.com/anshgraphic" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-02.jpeg" alt="Amazon Clone Web">
+                    <div class="layer">
+                        <h3>Amazon Clone Web Development</h3>
+                        <p>A responsive clone created using **HTML and CSS**, which strengthened web development skills like layout and responsiveness.</p>
+                        <a href="https://github.com/anshgraphic" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-03.jpeg" alt="Employee Salary Prediction ML">
+                    <div class="layer">
+                        <h3>Employee Salary Prediction Model</h3>
+                        <p>Worked on this project during an AICTE internship, which includes a lightweight **Streamlit web application** for real-time prediction.</p>
+                        <a href="https://github.com/anshgraphic" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/anshgraphic" target="_blank" class="btn">See more</a>
+        </div>
+    </div>
+    <!------------ contact ------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i> anshraithwan13@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 8533862420</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/ansh-sharma-4b1775224/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/anshgraphic" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Ansh.</p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var a = document.getElementById("sidemenu");
+    
+        function openmenu(){
+            a.style.right = "0";
+        }
+
+        function closemenu(){
+            a.style.right = "-200px";
+        }
+
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxfGiXe8GQfuA4OGkSzjVQY0dsRkeQakA3_YdJ6PKDd2oS_NuaX9Cj3KXIh0ISaeS_duw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+</body>
+</html>
